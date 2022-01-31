@@ -1,0 +1,38 @@
+<template>
+    <div class="bg-img">
+        
+        
+    
+        <div class="screen-container">
+            <!-- <div if:true={!isLoading} class="slds-spinner_container">
+                <div class="slds-spinner slds-spinner_brand slds-spinner_x-small">
+                    <div class="slds-spinner__dot-a"></div>
+                    <div class="slds-spinner__dot-b"></div>
+                </div>
+
+                    <div class="slds-spinner__text">Loading...</div>
+                </div> -->
+                <div if:false={modals.hidePortalModal}>
+                    <my-portal-modal></my-portal-modal>
+                </div>
+                <div if:true={modals.showGrowerLogin}>
+                    <my-grower-login></my-grower-login>
+                </div>
+                <div if:true={modals.showStaffLogin}>
+                    <my-staff-login></my-staff-login>
+                </div>
+                <div if:true={modals.showGrowerRegister}>
+                    <my-grower-register></my-grower-register>
+                </div>
+                <div if:true={modals.showStaffRegister}>
+                    <my-staff-register></my-staff-register>
+                </div>
+                <div if:true={modals.showGrowerDashboard}>
+                    <my-grower-dashboard></my-grower-dashboard>
+                </div>
+                <div if:true={modals.showStaffDashboard}>
+                    <my-staff-dashboard></my-staff-dashboard>
+                </div>
+    </div>
+</div>
+</template>

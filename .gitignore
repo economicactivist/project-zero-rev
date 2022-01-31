@@ -1,0 +1,8 @@
+node_modules
+.eslintignore
+.eslintrc.json
+src/SLDS
+.prettierignore
+jest.config.js
+dist
+.prettierrc

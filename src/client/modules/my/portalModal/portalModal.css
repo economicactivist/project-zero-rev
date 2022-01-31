@@ -1,0 +1,88 @@
+.portal-container{
+  
+  
+    height: 100%;
+    width: 100%;
+    /* max-height: 80vh;
+    max-width: 80vw;
+    min-width: 300px; */
+
+    /* position: absolute;
+    top: 10vh;
+    left: 10vw; */
+    background-color: rgba(214, 102, 102, 0.5);
+    z-index: 100;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.5);
+    /* margin-top: 10%; */
+    /* margin: auto; */
+    /* margin-left: 10%; */
+    margin: 0 auto;
+
+
+}
+
+.staff-login, .grower-login {
+   min-height: 45vh;
+    max-height: 45vh;
+   text-align: center;
+   display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 1em;
+}
+
+.staff-login {
+    background-color: #ff6000;
+    opacity: 0.1;
+}
+
+.grower-login {
+    background-color: #00ff00;
+    opacity: 0.1;
+
+}
+
+.slds-input {
+    background-color: white;
+   opacity: 1 !important;
+ 
+}
+
+@media screen and (max-width: 768px) {
+    .portal-container {
+        max-height: 50%;
+        max-width: 50%;
+        min-width: 300px;
+        /* position: absolute;
+        top: 10vh;
+        left: 10vw; */
+        background-color: rgba(214, 102, 102, 0.5);
+        z-index: 100;
+        padding: 1em;
+        border-radius: 0.5em;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.5);
+        /* margin-top: 10%; */
+        /* margin: auto; */
+        /* margin-left: 10%; */
+        margin: 0 auto;
+    }
+
+    .staff-login, .grower-login {
+        height: 50%;
+        text-align: center;
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 1em;
+    }
+
+    .staff-login {
+        background-color: #ff6000;
+    }
+
+    .grower-login {
+        background-color: #00ff00;
+    }
+}
