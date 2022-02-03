@@ -10,7 +10,7 @@
     /* position: absolute;
     top: 10vh;
     left: 10vw; */
-    background-color: rgba(214, 102, 102, 0.5);
+    background-color: rgba(214, 102, 102, 0.1);
     z-index: 100;
     padding: 0.5em;
     border-radius: 0.5em;
@@ -24,41 +24,84 @@
 }
 
 .staff-login, .grower-login {
-   min-height: 45vh;
-    max-height: 45vh;
+   min-height: 90vh;
+    max-height: 90vh;
    text-align: center;
    display:flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 1em;
+    /* margin-top: 5%;  */
+  
 }
-
 .staff-login {
-    background-color: #ff6000;
-    opacity: 0.1;
+    background-color: rgba(218, 45, 22, 0.2);
+    border-radius: 0.5em;
+
+    
+  
+
 }
+/* .staff-login:before {
+    /* background-color: #00ff00;
+    opacity: 0.1; 
+    */
+
 
 .grower-login {
-    background-color: #00ff00;
-    opacity: 0.1;
+    /* background-color: #00ff00; */
+    background-color: rgba(54, 218, 22, 0.2);
+    border-radius: 0.5em;
 
 }
-
 .slds-input {
-    background-color: white;
-   opacity: 1 !important;
- 
+    opacity: 0.9;
+    margin: 0.5em;
 }
 
-@media screen and (max-width: 768px) {
+.ff-grower-btn {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #ff4800b9;
+    border-radius: 0.5em;
+    border: rgb(114, 231, 17);
+    border-style: groove;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.ff-staff-btn {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(51, 110, 5, 0.767);
+    border-radius: 0.5em;
+    border: #ff7b00;
+    border-style: groove;
+    color: white;
+    padding: 8px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 767px) {
     .portal-container {
+        
         max-height: 50%;
         max-width: 50%;
         min-width: 300px;
         /* position: absolute;
         top: 10vh;
         left: 10vw; */
-        background-color: rgba(214, 102, 102, 0.5);
+        background-color: rgba(214, 102, 102, 0.1);
         z-index: 100;
         padding: 1em;
         border-radius: 0.5em;
@@ -70,19 +113,25 @@
     }
 
     .staff-login, .grower-login {
+        min-height: 45vh;
+        max-height: 45vh;
         height: 50%;
         text-align: center;
         display:flex;
         flex-direction: column;
         justify-content: flex-end;
         padding: 1em;
+        margin: .5em;
     }
 
-    .staff-login {
+    /* .staff-login:before {
         background-color: #ff6000;
+        opacity: 0.1;
     }
-
-    .grower-login {
+    
+    .grower-login:before {
         background-color: #00ff00;
-    }
+        opacity: 0.9;
+    
+    } */
 }
