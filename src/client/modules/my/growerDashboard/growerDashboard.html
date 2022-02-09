@@ -1,1 +1,47 @@
-<template></template>
+<template>
+    <div class="grow-dash-nav"><button class="logout-btn" title="go-back" onclick={handleClick}> <span title="go-back">Logout</span></button></div>
+    <div class="grower-dashboard-container slds-grid slds-wrap slds-gutters">
+        <div class="currently-growing-panel slds-grid_vertical slds-size_1-of-1 slds-medium-size_1-of-3">
+            <h1 class="curr-grow-header grow-header">🌱 Currently Growing 🌱</h1>
+            <div class="slds-col">
+                    <div class="growing-stage-div">
+                    <input type="text" name="">
+                    <button onclick={handleAddGrowingStageItem}>+</button>
+                    <button>-</button>
+                    
+                    </div>
+           
+
+              
+            </div>
+            
+        </div>
+        <div class="upcoming-harvest-panel slds-grid_vertical slds-size_1-of-1 slds-medium-size_1-of-3">
+            <h1 class="upcoming-harvest-header grow-header">🌾 Upcoming Harvest 🌾</h1>
+            <div class="slds-col">
+                <div class="harvest-stage-div">
+                <input type="text" name="">
+                <button onclick={handleHarvestStageItem}>+</button>
+                <button>-</button>
+                <button>&lt;</button>
+                </div>
+               
+                
+            </div>  
+        </div>
+        <div class="avail-for-purch-panel slds-grid_vertical slds-size_1-of-1 slds-medium-size_1-of-3">
+            <h1 class="avail-for-purch-header grow-header">💳 Ready to Sell 💳</h1>
+            <div class="slds-col">
+                <div class="market-stage-div">
+                <input type="text" name="">
+                <button onclick={handleMarketReadyItem}>+</button>
+                <button>-</button>
+                <button>&lt;</button>
+                </div>
+              
+            </div>  
+        </div>
+    </div>
+           
+       
+</template>

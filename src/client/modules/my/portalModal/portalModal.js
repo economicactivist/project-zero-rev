@@ -1,7 +1,10 @@
 import { LightningElement} from 'lwc';
 
 export default class PortalModal extends LightningElement {
-    // handleHideModal() {
-    //     this.dispatchEvent(new CustomEvent('hideportalmodal'));
-    // }
+    
+
+    handleGrowerClick(e) {
+        console.log(e.target.dataset.growerLogin); //grower-login
+        this.dispatchEvent(new CustomEvent('showmodal', { detail: e.target.dataset.growerLogin}));
+    }
 }

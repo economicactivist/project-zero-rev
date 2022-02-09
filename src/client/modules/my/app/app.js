@@ -25,17 +25,23 @@ export default class App extends LightningElement {
         }
     }   
 
-   handleHidePortalModal() {
+    handleHidePortalModal() {
         this.handleHideModal();
          this.modals = {...this.modals,
             hidePortalModal: true,}
     }
 
-    handleShowGrowerLogin() {
+    handleShowPortalModal() {
         this.handleHideModal();
-        this.modals = {...this.modals,
-            showGrowerLogin: true,}
+            this.modals = {...this.modals,
+            hidePortalModal: false,}
     }
+
+
+    // handleShowGrowerLogin() {
+      
+        
+    // }
 
     handleShowStaffLogin() {
         this.handleHideModal();
@@ -43,22 +49,20 @@ export default class App extends LightningElement {
             showStaffLogin: true,}
     }
 
-    handleShowGrowerRegister() {
-        this.handleHideModal();
-        this.modals = {...this.modals,
-            showGrowerRegister: true,}
-    }
+ 
 
-    handleShowStaffRegister() {
-        this.handleHideModal();
-        this.modals = {...this.modals,
-            showStaffRegister: true,}
-    }
-
-    handleShowGrowerDashboard() {
-        this.handleHideModal();
-        this.modals = {...this.modals,
-            showGrowerDashboard: true,}
+    handleShowGrowerDashboard(e) {
+        // this.handleHideModal();
+        // this.modals = {...this.modals,
+        //     showGrowerDashboard: true,}
+        console.log('working')
+        console.log(e.detail)
+        e.preventDefault();
+        if (e.detail === 'grower-login') {
+            this.handleHideModal();
+            this.modals = {...this.modals,
+                showGrowerDashboard: true,}
+        }
     }
 
     handleShowStaffDashboard() {

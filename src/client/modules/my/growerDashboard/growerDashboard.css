@@ -1,0 +1,96 @@
+.grow-dash-nav{
+    display: flex;
+    width: 100%;
+    height: 5%;
+    background-color: #f5f5f5;
+    z-index: 10;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2vw;
+
+}
+
+.logout-btn{
+    width: 5em;
+    height: 2em;
+    background-color: #f5f5f5;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-top: .5em;
+    /* padding: 3px; */
+    position: relative;
+    
+}
+
+.logout-btn:hover{
+    background-color: #d8b30c;
+}
+
+.logout-btn span{
+    /* padding: 0px; */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grower-dashboard-container{
+    position:relative;
+}
+
+.currently-growing-panel, .upcoming-harvest-panel, .avail-for-purch-panel {
+  margin: 5px 0;
+  border: 3px solid #ccc;
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #0000ff65;
+  height:90vh;
+  border-radius: 10px;
+ 
+}
+
+.currently-growing-panel{
+    background-color: #ff00005d;
+}
+
+.upcoming-harvest-panel{
+    background-color: #ffd9005d;    
+}
+
+.avail-for-purch-panel{
+    background-color: #0096005d;
+}
+
+
+.grow-header{
+    
+    font-size: 35px;
+    color: #572f01;
+    font-optical-sizing: auto;
+    /* font-weight: bold; */
+    /* margin-left: 10px; */
+
+}
+
+input{
+  
+
+    border: 0;
+    background-color: #e1f3cdb2;
+    color: black;
+    font-size: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+  
+}
+
+
+

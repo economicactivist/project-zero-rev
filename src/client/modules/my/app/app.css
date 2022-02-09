@@ -36,23 +36,104 @@ img {
 .greeting {
     height: 75px;
 } */
-/* html, body {
-    height: 100%;
-} */
+html, body {
+   
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+
+}
+
+
 
 .screen-container {
+    /* font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 24px; */
+
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'The Girl Next Door', cursive;
+   
    height: 100vh;
    width: 100vw;
+   max-width: 100%;
+   margin: 0;
+    padding: 0;
 }
 
 
 .bg-img {
+    background-color: rgb(176, 240, 219);
     background-image: url(./resources/farmfreshbg.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
     width: 100vw;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    
+}
+
+.flipped-bg-img{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.flipped-bg-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    
+    
+    background-image: url(./resources/flipped-farmfreshbg.jpg); 
+    background-color: rgb(173, 0, 0);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    margin: 0;
+    padding: 0;
+
+}
+
+@media screen and (max-width: 767px) {
+    .flipped-bg-img::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 300vh;
+        max-width: 100%;
+        
+        
+        background-image: url(./resources/farmfreshbg-vert.jpg); 
+        background-color: rgb(173, 0, 0);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.5;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .flipped-bg-img{
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+    }
 }
  
     /* z-index: 10; */
